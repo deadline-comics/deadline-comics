@@ -1,0 +1,44 @@
+* {
+    box-sizing: boarder-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: #240d0d;
+    margin: 25px;
+    margin-top: 200px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 452px;
+    height: auto;
+    animation: fade 3s ease-in infinite alternate;
+}
+
+p {
+    animation: fade 3s ease-in infinite alternate;
+    font-family: sans-serif;
+    color: rgb(168, 163, 163);
+    font-weight: bold;
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        animation: none !important;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
